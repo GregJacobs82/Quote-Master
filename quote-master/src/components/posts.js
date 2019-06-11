@@ -54,7 +54,7 @@ export const PostEdit = props => (
                 <SelectInput optionText="name" />
             </ReferenceInput>
             <TextInput source="title" />
-            <LongTextInput source="body" />
+            <LongTextInput source="body" label="Post Body"/>
         </SimpleForm>
     </Edit>
 );
@@ -66,7 +66,7 @@ export const PostCreate = props => (
                 <SelectInput optionText="name" />
             </ReferenceInput>
             <TextInput source="title" />
-            <LongTextInput source="body" />
+            <LongTextInput source="body" label="Post Body"/>
         </SimpleForm>
     </Create>
 );
