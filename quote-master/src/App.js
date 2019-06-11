@@ -14,10 +14,11 @@ import PostIcon from '@material-ui/icons/Book';
 import UserIcon from '@material-ui/icons/Group';
 
 // DATA
-const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
+// const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
+import dataProvider from './dataProvider';
 
 const App = () => (
-    <Admin dashboard={Dashboard} authProvider={authProvider} dataProvider = {dataProvider}>
+    <Admin dashboard={Dashboard} authProvider={authProvider} dataProvider={dataProvider}>
         <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon} />
         <Resource name="users" list={UserList} icon={UserIcon}/>
     </Admin>
