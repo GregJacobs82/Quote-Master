@@ -5,7 +5,7 @@ import React from 'react';
 import { Admin, Resource } from 'react-admin';
 import { PostList, PostEdit, PostCreate } from './components/posts';
 import { UserList } from './components/users';
-import Dashboard from './Dashboard';
+import Dashboard from './pages/Dashboard';
 import jsonServerProvider from 'ra-data-json-server';
 import authProvider from './authProvider';
 
